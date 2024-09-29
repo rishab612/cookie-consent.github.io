@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cookie Consent Card -->
+    <div class="cookie-card" id="cookieCard">
+        <div class="cookie-content">
+            <img src="cookie-icon.png" alt="Cookie Icon" class="cookie-icon">
+            <h2>We Value Your Privacy</h2>
+            <p>This website uses cookies to enhance your experience. You can choose to accept all cookies or customize your preferences.</p>
+            <div class="cookie-buttons">
+                <button class="btn accept" id="acceptAll"><i class="fas fa-check"></i> Accept All</button>
+                <button class="btn customize" id="customize"><i class="fas fa-sliders-h"></i> Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customize Cookie Modal -->
+    <div class="cookie-modal" id="cookieModal">
+        <div class="modal-content">
+            <button class="btn close" id="closeModal"><i class="fas fa-times"></i> Close</button>
+            <h2>Customize Cookies</h2>
+            <label>
+                <input type="checkbox" id="essentialCookies" checked disabled>
+                Essential Cookies (Required)
+            </label>
+            <label>
+                <input type="checkbox" id="analyticsCookies">
+                Analytics Cookies
+            </label>
+            <label>
+                <input type="checkbox" id="marketingCookies">
+                Marketing Cookies
+            </label>
+            <div class="modal-buttons">
+                <button class="btn reject" id="rejectAll"><i class="fas fa-times"></i> Reject All</button>
+                <button class="btn essential-only" id="saveEssential"><i class="fas fa-save"></i> Save Essential Only</button>
+                <button class="btn save-preferences" id="savePreferences"><i class="fas fa-save"></i> Save Preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
